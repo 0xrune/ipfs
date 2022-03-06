@@ -1,7 +1,8 @@
 import process from 'process';
 import minimist from 'minimist';
 import { Web3Storage, getFilesFromPath } from 'web3.storage';
-require('dotenv').config();
+import dotenv from 'dotenv'
+dotenv.config()
 
 async function main () {
   const args = minimist(process.argv.slice(2));
