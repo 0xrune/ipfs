@@ -7,7 +7,9 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pinata": "node upload-pinata.mjs",
+    "web3": "node upload-web3.mjs",
+    "json": "node update-json.mjs"
   },
   "dependencies": {
     "@pinata/sdk": "^1.1.23",

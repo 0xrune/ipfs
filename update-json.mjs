@@ -7,11 +7,11 @@ async function main () {
     const cid = args.cid;
 
     if (!cid) {
-        return console.error('Please provide a CID.')
+        return console.error('Please provide --cid=CID.')
     }
 
     if (args._.length < 1) {
-        return console.error('Please supply the path to a directory')
+        return console.error('Please provide the path to a directory')
     }
 
     const path = args._[0].concat("*.", "json");
